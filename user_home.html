@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #loading-screen {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('https://subwaystudio.com.my/wp-content/uploads/2016/01/ecommerce-subway-studio-malaysia.gif');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+        
+        #loading-screen img {
+          max-width: 200px;
+        }
+        
+        .hidden {
+          display: none;
+        }
+    </style>
+    <script>
+         function hideLoadingScreen() {
+          var loadingScreen = document.getElementById('loading-screen');
+          loadingScreen.style.display = 'none';
+        }
+        
+        window.addEventListener('DOMContentLoaded', function() {
+          setTimeout(hideLoadingScreen, 10000);
+        });
+    </script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+    
+      <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+ 
+ <!-- jQuery library -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+ <!-- Popper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>    
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+    </div>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="navbar-brand" style="display:inline;">
+            <h2 class="text-light"><img src="logo.png" alt="logo" style="border-radius:12px;width:50px;">
+                <span style="background-color: blue;color:white;font-size:50px;">S</span><span style="background-color: white;color:blue;font-size:50px;">H</span>
+                opify</h2>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="user_home.html" class="nav-link">Home</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="profile.html" class="nav-link">Profile</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="orders.html" class="nav-link">Orders</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="cart.html" class="nav-link">Cart</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="login.html" class="nav-link">Logout</a>
+            </h5>
+        </div>
+    </div>
+    <br/>
+    <div class="container-fluid">
+        <div class="jumbotron text-center text-dark">
+            <h1>Welcome to Shopify</h1>
+            <p>You can find all categories of products delivered to you with 7 day return policy</p>
+            <p>Shop according to your needs</p>
+        </div>
+    </div>
+    <section class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-4 mx-auto">
+                        <div class="card mx-auto d-block text-center">
+                            <div class="card-header text-secondary bg-dark"><h2>Ear phones</h2></div>
+                            <div class="card-body text-primary"><img src="https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-4 mx-auto">
+                        <div class="card mx-auto d-block text-center">
+                            <div class="card-header text-secondary bg-dark"><h2>Asus laptop</h2></div>
+                            <div class="card-body text-primary"><img src="https://images-eu.ssl-images-amazon.com/images/I/81bu95bhbOL._AC_UL160_SR160,160_.jpg" style="min-height:250px;max-height:250px;"></img></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-4 mx-auto"> 
+                        <div class="card mx-auto d-block text-center">
+                        <div class="card-header text-secondary bg-dark"><h2>Samsung phone</h2></div>
+                        <div class="card-body text-primary">
+                            <img src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY200_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"> 
+                <div class="card mx-auto d-block text-center">
+                <div class="card-header text-secondary bg-dark"><h2>Samsung phone</h2></div>
+                <div class="card-body text-primary">
+                    <img src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY200_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Asus laptop</h2></div>
+                    <div class="card-body text-primary"><img src="https://images-eu.ssl-images-amazon.com/images/I/81bu95bhbOL._AC_UL160_SR160,160_.jpg" style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Ear phones</h2></div>
+                    <div class="card-body text-primary"><img src="https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-4"> 
+                <div class="card mx-auto d-block text-center">
+                <div class="card-header text-secondary bg-dark"><h2>Samsung phone</h2></div>
+                <div class="card-body text-primary">
+                    <img src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY200_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Asus laptop</h2></div>
+                    <div class="card-body text-primary"><img src="https://images-eu.ssl-images-amazon.com/images/I/81bu95bhbOL._AC_UL160_SR160,160_.jpg" style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Ear phones</h2></div>
+                    <div class="card-body text-primary"><img src="https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-4"> 
+                <div class="card mx-auto d-block text-center">
+                <div class="card-header text-secondary bg-dark"><h2>Samsung phone</h2></div>
+                <div class="card-body text-primary">
+                    <img src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY200_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Asus laptop</h2></div>
+                    <div class="card-body text-primary"><img src="https://images-eu.ssl-images-amazon.com/images/I/81bu95bhbOL._AC_UL160_SR160,160_.jpg" style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+            <div class="col-4">
+                <div class="card mx-auto d-block text-center">
+                    <div class="card-header text-secondary bg-dark"><h2>Ear phones</h2></div>
+                    <div class="card-body text-primary"><img src="https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg"  style="min-height:250px;max-height:250px;"></img></div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary btn-block text-light" onclick="alert('Added to cart');">Add to cart</button></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark text-light" style="position:relative;left:0px;bottom:0px;"><h3 class="text-center">Copyrights &copy; All rights reserved</h3><br>
+        <div class="text-white text-center">Contact us:aravindaakumar@gmail.com</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin-bottom:0px;
+    padding:0px;
+    font-size:25px
+}
+body{
+    margin:0px 0px 0px 0pxs;
+    background-image:url('https://media.istockphoto.com/id/1340117122/photo/cube-with-shopping-trolley-symbol-on-the-laptop-keyboard.jpg?b=1&s=170667a&w=0&k=20&c=PU8iTTvTj6TV6_Quy9Z7KQJoOgY-rp_rqI9FbFNFYEw=');
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height:1000px;
+}
+.jumbotron{
+    background-color: rgba(0,0,40,0.3);
+    color:black;
+}
+.error{
+    color:red;
+}

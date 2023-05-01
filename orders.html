@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="navbar-brand" style="display:inline;">
+            <h2 class="text-light"><img src="logo.png" alt="logo" style="border-radius:12px;width:50px;">
+                <span style="background-color: blue;color:white;font-size:50px;">S</span><span style="background-color: white;color:blue;font-size:50px;">H</span>
+                opify</h2>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="user_home.html" class="nav-link">Home</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="profile.html" class="nav-link">Profile</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="orders.html" class="nav-link">Orders</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="cart.html" class="nav-link">Cart</a>
+            </h5>
+        </div>
+        <div class="navbar-nav">
+            <h5 class="nav-item">
+                <a href="login.html" class="nav-link">Logout</a>
+            </h5>
+        </div>
+        
+    </div>
+    </div><br>
+    <div class="container-fluid">
+        <div class="jumbotron text-center text-dark">
+            <h1>Welcome</h1>
+            <p>You can find all categories of products delivered to you with 7 day return policy</p>
+            <p>Shop according to your needs</p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto d-block">
+                <div class="text-center">
+                        <h3 class="text-dark">My orders</h3>
+                    </div>
+                        <table id="table" class="table table-bordered table-hover table-info text-dark">
+                            <tr>
+                                <td>Sl no</td>
+                                <td>Product</td>
+                                <td>Product Name</td>
+                                <td>Price</td>
+                                <td>Shipping address</td>
+                                <td>Cancellation</td>
+                            </tr>
+                            <tr id="one">
+                                <td>1</td>
+                                <td><img class="img-thumbnail" src="https://m.media-amazon.com/images/I/41eW+ZpbDTL._AC_SY200_.jpg"></img></td>
+                                <td>Samsung Phone</td>
+                                <td>$1000</td>
+                                <td>H no#32 street,Bangalore</td>
+                                <td><button type="button" class="btn btn-lg btn-danger" onclick="cancelitemone()">Cancel</button></td>
+                            </tr>
+                            <tr id="two">
+                                <td>2</td>
+                                <td><img class="img-thumbnail" src="https://images-eu.ssl-images-amazon.com/images/I/81bu95bhbOL._AC_UL160_SR160,160_.jpg"></img></td>
+                                <td>Asus laptop</td>
+                                <td>$200</td>
+                                <td>H no#36 street,Hassan</td>
+                                <td><button type="button" class="btn btn-lg btn-danger" onclick="cancelitemtwo()">Cancel</button></td>
+                            </tr>
+                            <tr id="three">
+                                <td>3</td>
+                                <td><img class="img-thumbnail" src="https://m.media-amazon.com/images/I/61-ZYvldY+L._AC_UL400_.jpg"></img></td>
+                                <td>Ear buds</td>
+                                <td>$20</td>
+                                <td>H no#32 street,Mysore</td>
+                                <td><button type="button" class="btn btn-lg btn-danger" onclick="cancelitemthree()">Cancel</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="navbar navbar-dark bg-dark text-light" style="position:relative;left:0px;bottom:0px;width:100%;"><h3 class="text-center">Copyrights &copy; All rights reserved</h3><br>
+        <div class="text-center">Contact us:aravindaakumar@gmail.com</div>
+    </div>
+    <script>
+        function cancelitemone() {
+          const tr = document.getElementById("one");
+          if (tr) {
+            tr.remove();
+          }
+        }
+      
+        function cancelitemtwo() {
+          const tr = document.getElementById("two");
+          if (tr) {
+            tr.remove();
+          }
+        }
+      
+        function cancelitemthree() {
+          const tr = document.getElementById("three");
+          if (tr) {
+            tr.remove();
+          }
+        }
+      </script>
+      
+</body>
+</html>
